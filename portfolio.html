@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-DR1kMC0IX6v8x9DO3q4v88xZgLD5mP2VWb0Eo9GtXf/K2zU7MOz3ZEmk30fL99IDcLkPAt38GEvYwipuAFgMSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="portfolio-1.jpeg" alt="Profile Image">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello, I am Arun Kumar, pursuing BTech at SR University. I am a tech enthusiast aiming to become a UI/UX Designer.</p>
+                <div class="tabs">
+                    <button class="tab-link active" data-tab="skills">Skills</button>
+                    <button class="tab-link" data-tab="experience">Experience</button>
+                    <button class="tab-link" data-tab="education">Education</button>
+                </div>
+                <div class="tab-content active" id="skills">
+                    <ul>
+                        <li><strong>Web Enthusiast:</strong> Building websites</li>
+                        <li><strong>Web Development:</strong> HTML, CSS</li>
+                        <li><strong>Programming:</strong> C++</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><strong>Web Enthusiast:</strong> Designing websites</li>
+                        <li><strong>Programming:</strong> C++</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><strong>B.Tech:</strong> SR University</li>
+                        <li><strong>11th & 12th:</strong> Alphores Junior College</li>
+                        <li><strong>10th:</strong> Kiwi Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="services-list">
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h3>Beginner to Data Analysis</h3>
+                <p>introduction to machine learnung</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-cloud"></i>
+                <h3>Introdction to networks</h3>
+                <p>Basic Cloud Computing Fundamentals</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <h3>Hackerrank 3 Star</h3>
+                <p>Proficiency in python programming</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="portfolio-2.jpeg" alt="Project 1">
+                <div class="work-details">
+                    <h3>Landing Page</h3>
+                    <p>Basic HTML and CSS project</p>
+                    <a href="#"><i class="fab fa-html5"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio-3.jpeg" alt="Project 2">
+                <div class="work-details">
+                    <h3>Spotify Clone</h3>
+                    <p>Project using Bootstrap</p>
+                    <a href="#"><i class="fab fa-bootstrap"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio-3.jpeg" alt="Project 3">
+                <div class="work-details">
+                    <h3>Weather App</h3>
+                    <p>JavaScript and API project</p>
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p><i class="fas fa-envelope"></i> pentkararunkumar@gmail.com</p>
+                <p><i class="far fa-address-book"></i> 9030524958</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <a href="greenimmg.jpg" download class="btn">Download Portfolio</a>
+            </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Arun Kumar. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
